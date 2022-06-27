@@ -1,0 +1,38 @@
+.container-fluid,.card-down{
+    color: white;
+    
+}
+
+/* Simple image */
+.card-down img{
+    margin-top: 2%;
+    margin-left: 1%;
+    width:200px;
+    height:150px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Image in hover */
+.card-down img:hover{
+    transition: 0.3s ease-in;
+    transform: scale(1.05);
+}
+
+/* Round iamge Css */
+.item img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    }
+    
+    .item{
+        margin: 0px 15px;
+        text-align: center;
+    }
+    .aclass:hover{
+        color: royalblue;
+    }
+    
+    .aclass{
+        color: black;
+    }

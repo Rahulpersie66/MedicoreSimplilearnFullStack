@@ -1,0 +1,45 @@
+
+/* Navbar */
+.navbar-brand{
+    font-family: cursive;
+    font-weight:bolder;
+    font-stretch: narrower;
+}
+
+.navbar-brand img{
+    margin-left: 0.7%;
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+}
+
+.container-fluid{
+    background-color: white;
+    object-fit: cover;
+    
+}
+
+.dropdown-menu{
+    background-color: whitesmoke;
+}
+
+/* Search text  */
+.form{
+    margin-left:9%;
+    width:35%;
+
+}
+
+/* Shopping cart */
+.shop{
+    margin-left: 15%;
+}
+
+
+    /* Bottom footer */
+    .footer{
+        margin-bottom: 0%;
+        
+
+    }
+    

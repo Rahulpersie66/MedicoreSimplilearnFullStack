@@ -1,0 +1,48 @@
+ <!-- round images -->
+ <div class="d-flex expand-md ">
+
+    <div class="item">
+        <a routerLink="/home" class="aclass"  (click)="filter('')">
+            <img src="../../../assets/AllMedicineLogo.jpg">
+            <h6>All Medicine</h6>
+        </a>
+    </div>
+    <div class="item">
+        <a class="aclass" (click)="filter('tablet')" >
+            <img src="../../../assets/tabletLogo.jpg">
+            <h6>Tablets</h6>
+        </a>
+    </div>
+  
+    <div class="item">
+        <a class="aclass" (click)="filter('Injection')" >
+            <img src="../../../assets/injectionLogo.jpg">
+            <h6>Injection</h6>
+        </a>
+    </div>
+  
+    <div class="item">
+        <a class="aclass" (click)="filter('Liquid')">
+            <img src="../../../assets/LiquidLogo.jpg">
+            <h6>Liquid</h6>
+        </a>
+    </div>
+  </div>
+  
+  
+<div class="container-fluid" >
+    <div class="row my-3 ">
+        <div  class="card-down col-lg-3 col-md-4 col-sm-6 border border-3  text-black " 
+         *ngFor="let pro of filterCategory | filter : searchKey : 'prodName' ">
+             
+        <img src="{{pro.imgUrl}}" routerLink="/">
+         <!-- Text inside  -->
+            <h1><b> {{pro.prodName}}</b><br></h1>
+                <p><i>{{pro.vendorName}}</i><br>
+                <strong>₹{{pro.price}}/</strong>-<br>
+                {{pro.prodDetail}}</p><br>
+         <!-- Nutton of the card -->
+                <button class="btn btn-secondary m-1 " (click)="addToCart(pro)"  ><b>Add to cart</b></button>
+                 <br>
+
+<div>
